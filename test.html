@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="buttonClick()" onblur="blurButton()">Button</button>
+
+<ul id="unorderedList">
+	<li onclick="clickLi()">Blae 1</li>
+	<li onclick="clickLi()">Blae 2</li>
+	<li onclick="clickLi()">Blae 3</li>
+</ul>
+
+<script>
+function clickLi() {
+    console.log("Click on li");
+}
+
+function buttonClick() {
+    console.log("Click on button");
+}
+
+function blurButton() {
+    console.log("button blur");
+    document.getElementById('unorderedList').style.display="none";
+}
+</script>
+
+</body>
+</html>
